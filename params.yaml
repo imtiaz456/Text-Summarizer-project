@@ -1,0 +1,6 @@
+
+
+# I  put here some dummy data to overcome the error. If this file remains empty it will throws an error, while 
+# exicuting the 01_data_ingestion.ipynb file.
+
+key: value   
