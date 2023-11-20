@@ -1,9 +1,17 @@
-# 1. Update config.yaml
+# 1. Update config.yaml for data ingestion.
 
 artifacts_root: artifacts   # it will create one folder and everything will be saved in this folder.
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/imtiaz456/Branching_repositories/raw/main/NLP_Project.zip
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+  # 1. Update config.yaml for data validation.
+data_validation:
+  root_dir: artifacts/data_validation  # it will create a new folder called data_validation in artifacts.
+  STATUS_FILE: artifacts/data_validation/status.txt #it will create a new file as status.txt in artifacts as
+  # TRUE if we have these three files ["train", "test", "validation"] available or not , FALSE otherwise.
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]

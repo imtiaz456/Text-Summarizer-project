@@ -6,7 +6,7 @@ import zipfile                   # to perform unzip operation
 from textSummarizer.logging import logger  # import from common.py file
 from textSummarizer.utils.common import get_size  # import from common.py file
 from pathlib import Path
-from textSummarizer.entity import (DataIngestionConfig)
+from textSummarizer.entity import DataIngestionConfig
 
 # i just copied code from 01_data_ingestion.ipynb file and pasted here
 
